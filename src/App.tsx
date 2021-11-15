@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {FC} from "react";
+import "./App.css";
+import "antd/dist/antd.css";
+import StateCounter from "./components/StateCounter";
+import RefCounter from "./components/RefCounter";
+import VariableCounter from "./components/VariableCounter";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: FC = () => {
+    return (
+        <div style={{display: "flex"}}>
+            <StateCounter/>
+            <RefCounter/>
+            <VariableCounter/>
+        </div>
+    );
+};
 
 export default App;
