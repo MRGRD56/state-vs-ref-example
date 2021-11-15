@@ -29,6 +29,7 @@ const VariableCounter: FC = () => {
                     <Button onClick={incrementCount}>+1</Button>
                 </Space>
                 <Button onClick={reRender}>Re-render</Button>
+                {someState}
             </Space>
         </NamedComponent>
     );
